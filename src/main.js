@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
-
-Vue.config.productionTip = false
+import Vue from "vue";
+import App from "./App.vue";
+import { Button } from "ant-design-vue";
+Vue.component(Button.name, Button);
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(App)
+}).$mount("#app");
